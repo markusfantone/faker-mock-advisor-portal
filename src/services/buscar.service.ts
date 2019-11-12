@@ -1,4 +1,5 @@
 import { Injectable } from '@nestjs/common';
+import * as faker from 'faker';
 
 @Injectable()
 export class BuscarService {
@@ -6,16 +7,16 @@ export class BuscarService {
     return {
       email: {
         pk: {
-          tipoParceiro: 3,
+          tipoParceiro: faker.random.number({ min: 0, max: 3 }),
           cpf: 40757557627,
         },
-        receberEmail: 'N',
-        codigoCorretor: 40,
-        dataInclusao: '2019-09-09',
-        dataUltimaEdicao: '2019-10-24',
-        email: 'mazzatech.willie@tokiomarine.com.br',
+        receberEmail: faker.random.arrayElement(['N', 'S']),
+        codigoCorretor: faker.random.number({ min: 1, max: 40000 }),
+        dataInclusao: faker.date.past(2),
+        dataUltimaEdicao: faker.date.recent(),
+        email: faker.internet.email(),
         ddd: 11,
-        telefone: 958478346,
+        telefone: faker.random.number({ min: 941111111, max: 999999999 }),
       },
       sucesso: true,
       expirado: false,

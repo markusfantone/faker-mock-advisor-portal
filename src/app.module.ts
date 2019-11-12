@@ -9,7 +9,6 @@ import { GerenteController } from './controllers/gerente.controller';
 import { ListaController } from './controllers/lista.controller';
 import { RevistasController } from './controllers/revistas.controller';
 /* Services */
-import { AppService } from './app.service';
 import { BuscarService } from './services/buscar.service';
 import { CotacaoPerdidaService } from './services/cotacaoperdida.service';
 import { CrossSellingVidaService } from './services/crosssellingvida.service';
@@ -30,7 +29,6 @@ import { RevistasService } from './services/revistas.service';
     RevistasController,
   ],
   providers: [
-    AppService,
     BuscarService,
     CotacaoPerdidaService,
     CrossSellingVidaService,
