@@ -1,7 +1,7 @@
 import { Controller, Get } from '@nestjs/common';
 import { CrossSellingVidaService } from '../services/crosssellingvida.service';
 
-@Controller('crosssellingvida')
+@Controller('liferay/home/cadastro/email/crosssellingvida')
 export class CrossSellingVidaController {
   constructor(
     private readonly crossSellingVidaService: CrossSellingVidaService,

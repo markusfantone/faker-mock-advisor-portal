@@ -1,7 +1,7 @@
 import { Controller, Get } from '@nestjs/common';
 import { GerenteService } from '../services/gerente.service';
 
-@Controller('gerente')
+@Controller('liferay/home/ajax/gerente')
 export class GerenteController {
   constructor(private readonly gerenteService: GerenteService) {}
 

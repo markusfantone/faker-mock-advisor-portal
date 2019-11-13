@@ -8,7 +8,7 @@ export class GerenteService {
       isCorretorAssessoria: false,
       meuGerente: {
         cnpjSucursal: '33164021003893',
-        dataNascimento: 472230000000,
+        dataNascimento: faker.date.past().valueOf(),
         bairro: 'CAMBUI',
         municipio: 'CAMPINAS',
         cep: '13025240',
@@ -19,12 +19,18 @@ export class GerenteService {
         endereco: 'ANTONIO LAPA',
         fax: '19-32557377',
         titulo: 'Meu Gerente',
-        email: 'SIMONE.PRICIANE@TOKIOMARINE.COM.BR',
-        nome: 'SIMONE PRICIANE OLIVEIRA DE ALMEIDA',
+        email: faker.internet
+          .email(
+            faker.name.firstName(),
+            faker.name.lastName(),
+            'tokiomarine.com.br',
+          )
+          .toUpperCase(),
+        nome: `${faker.name.firstName()} ${faker.name.lastName()}`.toUpperCase(),
         cpf: '33366021810',
         matricula: '105391',
         cargo: null,
-        admissao: 1250046000000,
+        admissao: faker.date.past().valueOf(),
         siglaEstado: 'SP',
         celular: '1993559744',
         ramal: '0000',
