@@ -1,4 +1,5 @@
 import { Injectable } from '@nestjs/common';
+import * as faker from 'faker';
 
 @Injectable()
 export class GerenteService {

@@ -1,4 +1,5 @@
 import { Injectable } from '@nestjs/common';
+import * as faker from 'faker';
 
 @Injectable()
 export class ListaService {
@@ -8,7 +9,7 @@ export class ListaService {
         {
           url:
             'https://prtsso.tokiomarine.com.br/acompanhamentoEmissao/pesquisaAutomatica.do?tipoDeRelatorio=2&data=27/02/2018',
-          valor: 8924.91,
+          valor: faker.random.number({ min: 0, max: 50000, precision: 0.01 }),
           titulo: 'APÓLICES EMITIDAS',
           feel: 'positivo',
           quantidade: 6,
@@ -17,7 +18,7 @@ export class ListaService {
         {
           url:
             'https://prtsso.tokiomarine.com.br/acompanhamentoEmissao/pesquisaAutomatica.do?tipoDeRelatorio=4&data=27/02/2018',
-          valor: 0,
+          valor: faker.random.number({ min: 0, max: 50000, precision: 0.01 }),
           titulo: 'APÓLICES CANCELADAS',
           feel: 'negativo',
           quantidade: 0,
@@ -26,7 +27,7 @@ export class ListaService {
         {
           url:
             'https://prtsso.tokiomarine.com.br/acompanhamentoEmissao/pesquisaAutomatica.do?tipoDeRelatorio=5&data=27/02/2018',
-          valor: 7175.34,
+          valor: faker.random.number({ min: 0, max: 50000, precision: 0.01 }),
           titulo: 'PROPOSTAS CONTRATADAS',
           feel: 'positivo',
           quantidade: 5,
@@ -35,7 +36,7 @@ export class ListaService {
         {
           url:
             'https://prtsso.tokiomarine.com.br/clientesInadimplentes/pesquisaAutomatica.do?ID_SISTEMA=1&execute=listar&data=27/02/2018',
-          valor: 2663.04,
+          valor: faker.random.number({ min: 0, max: 50000, precision: 0.01 }),
           titulo: 'PARCELAS INADIMPLENTES',
           feel: 'negativo',
           quantidade: 16,
@@ -44,7 +45,7 @@ export class ListaService {
         {
           url:
             'https://prtsso.tokiomarine.com.br/acompanhamentoEmissao/pesquisaAutomatica.do?tipoDeRelatorio=7&data=27/02/2018',
-          valor: 0,
+          valor: faker.random.number({ min: 0, max: 50000, precision: 0.01 }),
           titulo: 'PARCELAS PAGAS',
           feel: 'positivo',
           quantidade: 0,
@@ -53,7 +54,7 @@ export class ListaService {
         {
           url:
             'https://prtsso.tokiomarine.com.br/extratoComissao/pesquisaAutomatica.do?data=27/02/2018',
-          valor: 1489.56,
+          valor: faker.random.number({ min: 0, max: 50000, precision: 0.01 }),
           titulo: 'COMISSÕES PAGAS',
           feel: 'positivo',
           quantidade: 154,
@@ -62,7 +63,7 @@ export class ListaService {
         {
           url:
             'https://prtsso.tokiomarine.com.br/AvisoSinistro/consulta/apolice?Versao=auto',
-          valor: null,
+          valor: faker.random.number({ min: 0, max: 50000, precision: 0.01 }),
           titulo: 'SINISTROS AVISADOS',
           feel: 'neutro',
           quantidade: 2,
