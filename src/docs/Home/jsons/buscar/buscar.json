@@ -1,0 +1,17 @@
+{
+    "email": {
+        "pk": {
+            "tipoParceiro": 3,
+            "cpf": 40757557627
+        },
+        "receberEmail": "N",
+        "codigoCorretor": 40,
+        "dataInclusao": "2019-09-09",
+        "dataUltimaEdicao": "2019-10-24",
+        "email": "mazzatech.willie@tokiomarine.com.br",
+        "ddd": 11,
+        "telefone": 958478346
+    },
+    "sucesso": true,
+    "expirado": false
+}
