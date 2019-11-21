@@ -23,6 +23,8 @@ export class NoticiasService {
       });
     }
 
-    return newsArray;
+    return {
+      noticias: newsArray,
+    };
   }
 }
