@@ -25,6 +25,7 @@
     "@nestjs/platform-express": "^6.8.0",
     "@types/faker": "4.1.7",
     "faker": "4.1.0",
+    "helmet": "3.21.2",
     "reflect-metadata": "^0.1.13",
     "rimraf": "^3.0.0",
     "rxjs": "^6.5.3"
