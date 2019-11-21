@@ -9,6 +9,7 @@ import { GerenteController } from './controllers/gerente.controller';
 import { ListaController } from './controllers/lista.controller';
 import { RevistasController } from './controllers/revistas.controller';
 import { NoticiasController } from './controllers/noticias.controller';
+import { ProducaoMesController } from './controllers/producaomes.controller';
 /* Services */
 import { BuscarService } from './services/buscar.service';
 import { CotacaoPerdidaService } from './services/cotacaoperdida.service';
@@ -18,6 +19,7 @@ import { GerenteService } from './services/gerente.service';
 import { ListaService } from './services/lista.service';
 import { RevistasService } from './services/revistas.service';
 import { NoticiasService } from './services/noticias.service';
+import { ProducaoMesService } from './services/producaomes.service';
 
 @Module({
   imports: [],
@@ -30,6 +32,7 @@ import { NoticiasService } from './services/noticias.service';
     ListaController,
     RevistasController,
     NoticiasController,
+    ProducaoMesController,
   ],
   providers: [
     BuscarService,
@@ -40,6 +43,7 @@ import { NoticiasService } from './services/noticias.service';
     ListaService,
     RevistasService,
     NoticiasService,
+    ProducaoMesService,
   ],
 })
 export class AppModule {}

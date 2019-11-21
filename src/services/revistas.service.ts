@@ -6,9 +6,9 @@ export class RevistasService {
     return {
       dados: [
         {
-          nome: 'Revista nosso corretor 1',
+          nome: 'Revista nosso corretor 17',
           link:
-            'https://portalparceiros-aceitew.tokiomarine.com.br/CotadorAutoService/images/banner-natal-2018-full-1.jpg',
+            'https://www.tokiomarine.com.br/wp-content/uploads/2019/04/Revista-Nosso-Corretor-ed-17.pdf',
           ordemLancamento: 1,
         },
         {
