@@ -1,7 +1,7 @@
 import { Controller, Get } from '@nestjs/common';
 import { NoticiasService } from '../services/noticias.service';
 
-@Controller('liferay/home/cadastro/email/noticias')
+@Controller('liferay/home/ajax/noticias')
 export class NoticiasController {
   constructor(private readonly noticiasService: NoticiasService) {}
 
