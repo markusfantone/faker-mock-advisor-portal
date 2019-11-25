@@ -33,6 +33,8 @@ export class ListaService {
 
     return {
       lista: dashArray,
+      exibirDebitos: true,
+      dataProcessamento: 1519743600000,
     };
   }
 
