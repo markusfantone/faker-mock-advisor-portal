@@ -3,6 +3,39 @@ import * as faker from 'faker';
 
 @Injectable()
 export class ListaService {
+  getByQtt(qtt: number): any {
+    let dashArray: Array<any>;
+
+    dashArray = new Array<any>();
+
+    for (let index = 0; index < qtt; index++) {
+      dashArray.push({
+        url: `https://prtsso.tokiomarine.com.br/acompanhamentoEmissao/pesquisaAutomatica.do?${index +
+          1}`,
+        valor: faker.random.number({ min: 0, max: 50000, precision: 0.01 }),
+        titulo: faker.random.arrayElement([
+          'APÓLICES EMITIDAS',
+          'APÓLICES CANCELADAS',
+          'PROPOSTAS CONTRATADAS',
+          'PARCELAS INADIMPLENTES',
+          'PARCELAS PAGAS',
+          'COMISSÕES PAGAS',
+          'SINISTROS AVISADOS',
+          'ASSISTÊNCIAS',
+          'RESTITUIÇÕES PENDENTES',
+          'DOCUMENTOS PENDENTES PLD',
+        ]),
+        feel: faker.random.arrayElement(['positivo', 'negativo']),
+        quantidade: faker.random.number({ min: 0, max: 5000 }),
+        id: index + 1,
+      });
+    }
+
+    return {
+      lista: dashArray,
+    };
+  }
+
   get(): any {
     return {
       lista: [
